@@ -1,0 +1,58 @@
+// label.tlv-checkbox-label {
+//   grid-template-columns: 1fr 0.2fr;
+//   direction: ltr;
+//   display: grid;
+//   position: relative;
+
+//   font-family: inherit;
+//   font-size: 17px;
+//   font-weight: normal;
+//   font-stretch: normal;
+//   font-style: normal;
+//   line-height: 1.22;
+//   letter-spacing: normal;
+//   color: #979797;
+
+//   /* Hide the browser's default checkbox */
+//   input {
+//     position: absolute;
+//     opacity: 0;
+//     height: 0;
+//     width: 0;
+//   }
+
+//   /* When the checkbox is checked, add a blue background */
+//   input:checked ~ .checkmark {
+//     color: #07b6f3;
+//     border: solid 1px #07b6f3;
+//   }
+
+//   /* Create a custom checkbox */
+//   .checkmark {
+//     place-self: center;
+//     height: 1.2rem;
+//     width: 1.2rem;
+//     border: solid 1px #d3d3d3;
+//     border-radius: 5px;
+//   }
+// }
+:host ::ng-deep {
+  [kendoCheckBox] {
+    place-self: center;
+    height: 1.2rem;
+    width: 1.2rem;
+    border: solid 1px #d3d3d3;
+    border-radius: 5px;
+    background-color: transparent;
+
+    &:checked {
+      background-color: transparent !important;
+      border-color: #60a5ff !important;
+      color: #60a5ff !important;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+:host ::ng-deep {
+
+  & [kendogridlogicalcell] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    &.k-state-focused {
+      box-shadow: none;
+    }
+  }
+
+  kendo-grid-string-filter-cell {
+    .k-filtercell-operator {
+      margin: 0 !important;
+
+      & kendo-dropdownlist {
+        height: 100%;
+        & .k-dropdown-wrap {
+          background: transparent;
+          border: none;
+
+          &.k-state-focused {
+            box-shadow: none;
+          }
+
+          & .k-i-filter::before {
+            content: "\e129" !important;
+          }
+        }
+      }
+    }
+  }
+}

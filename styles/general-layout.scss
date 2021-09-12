@@ -1,0 +1,196 @@
+/** col margin **/
+$col-margin: 6px;
+$col-float: right;
+
+.right {
+  float: right;
+  display: flex;
+}
+
+/**filter page style**/
+
+.filter-header {
+  margin-top: 16px;
+  font-size: 22px;
+  //color: "#2a3c6f";
+  display: inline-block;
+  white-space: nowrap;
+  color: #2a3c6f;
+  //font-family: AlmoniDLAAA;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.rectangle-filter {
+  //width: 95%;
+  //height: 89px;
+  margin: 0 2px 13px 0;
+  // padding: 18px 43px 18px 29px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+.filter-mitkadem {
+  padding-right: 11.6%;
+}
+.k-dialog-titlebar {
+  background-color: #d8d8d8;
+}
+.Line-filter {
+  // width: 1px;
+  height: 53px;
+  /*  margin: 0 135px 0 29px;*/
+  margin-right: 30px;
+  border: solid 1px #d8d8d8;
+}
+
+/*defenition of col split*/
+.col-1 {
+  float: $col-float;
+  width: 1%;
+  margin: $col-margin;
+}
+.col-2 {
+  float: $col-float;
+  width: 2%;
+  margin: $col-margin;
+}
+.col-3 {
+  float: $col-float;
+  width: 3%;
+  margin: $col-margin;
+}
+.col-4 {
+  float: $col-float;
+  width: 4%;
+  margin: $col-margin;
+}
+.col-5 {
+  float: $col-float;
+  width: 5%;
+  margin: $col-margin;
+}
+.col-6 {
+  float: $col-float;
+  width: 6%;
+  margin: $col-margin;
+}
+.col-5 {
+  float: $col-float;
+  width: 5%;
+  margin: $col-margin;
+}
+.col-7 {
+  float: $col-float;
+  width: 7%;
+  margin: $col-margin;
+}
+.col-8 {
+  float: $col-float;
+  width: 8%;
+  margin: $col-margin;
+}
+.col-9 {
+  float: $col-float;
+  width: 9%;
+  margin: $col-margin;
+}
+
+.col-10 {
+  float: $col-float;
+  width: 10%;
+  margin: $col-margin;
+}
+
+.col-15 {
+  float: $col-float;
+  width: 15%;
+  margin: $col-margin;
+}
+
+.col-20 {
+  float: $col-float;
+  width: 20%;
+  margin: $col-margin;
+}
+
+.col-25 {
+  float: $col-float;
+  width: 25%;
+  margin: $col-margin;
+}
+.col-30 {
+  float: $col-float;
+  width: 30%;
+  margin: $col-margin;
+}
+.col-35 {
+  float: $col-float;
+  width: 35%;
+  margin: $col-margin;
+}
+.col-45 {
+  float: $col-float;
+  width: 45%;
+  margin: $col-margin;
+}
+.col-49 {
+  float: $col-float;
+  width: 49%;
+  margin: $col-margin;
+}
+.col-50 {
+  float: $col-float;
+  width: 50%;
+  margin: $col-margin;
+}
+
+.col-75 {
+  float: $col-float;
+  width: 75%;
+  margin: $col-margin;
+}
+.col-96 {
+  float: $col-float;
+  width: 96%;
+  margin: $col-margin;
+}
+.no-header-grid .k-grid .k-grid-aria-root .k-grid-header {
+  display: none;
+}
+.koteret {
+  padding-right: 3%;
+}
+img.trash-2 {
+  width: 24px;
+  height: 24px;
+  margin: 14px 41px 15px 22px;
+  object-fit: contain;
+  background-color: #a5a5a5;
+}
+.bottom-nav {
+  border-bottom: #e6e6e5 solid 1px;
+  padding-bottom: 4%;
+  float: left;
+}
+.margin-button {
+  padding-top: 2%;
+}
+.filter-left-header {
+  float: $col-float;
+  width: 10%;
+  margin: 1.5%;
+}
+.k-icon-24 {
+  font-size: 24px;
+}
+
+.grid-upper-buttons {
+  padding-bottom: 1%;
+  padding: 0% 3.8% 1% 0%;
+}
+// .k-column-title{
+//   text-align: center;
+// }

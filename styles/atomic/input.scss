@@ -1,0 +1,21 @@
+:host ::ng-deep {
+  kendo-floatinglabel,
+  .k-floating-label-container {
+    kendo-autocomplete,
+    .k-autocomplete {
+      border-radius: 5px;
+
+      & input {
+        height: 2.2rem;
+      }
+      &:focus-within {
+        box-shadow: none;
+      }
+    }
+
+    & input {
+      border-radius: 5px;
+      box-shadow: none !important;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+@use './atomic/filter-cell.scss';
+@use './variables.scss';
+:host ::ng-deep .k-grid {
+  // border-color: white;
+
+  //tr:not(.k-state-selected)
+
+  & table {
+    // first column
+    // & colgroup col:nth-child(1) {
+    //   width: 0.1px !important;
+    // }
+
+    & thead {
+      & th {
+        padding: 1rem 2rem 1rem 0;
+        color: #3f4140;
+      }
+    }
+    // & tr ~ tr.k-state-selected {
+    //   background-image: linear-gradient(0deg, #06060614 16%, #00000000 69%);
+    // }
+
+    & tr {
+      &.k-grouping-row {
+        font-size: 1.6rem;
+        & td:first-child {
+          background: #f8f8f8;
+        }
+      }
+      &:not(.k-grouping-row) {
+        cursor: pointer;
+      }
+
+      &.above td {
+        // background-image: linear-gradient(180deg, #f7f7f700 0%, #0000000d 80%);
+      }
+
+      &.k-state-selected {
+        // transform: scale(1.02);
+        outline: 1px solid #cccccc;
+        // background-color: #ffbf005c;
+        & td {
+          //          background-color: #ffc00000;
+          background-color: #ffbf005c;
+          position: relative;
+
+          &:last-child::after {
+            content: "⋮";
+            position: absolute;
+            left: 10%;
+            height: 100%;
+            width: 2rem;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            top: 0;
+            font-size: 2.5rem;
+            color: #d8d8d8;
+          }
+        }
+        & + tr td {
+          // background-image: linear-gradient(0deg, #f7f7f700 0%, #0000000d 80%);
+        }
+      }
+
+      height: 2rem;
+      outline: 1.2px solid #e6e6e5;
+      & .k-reset a.k-icon {
+        position: absolute;
+        left: 2rem;
+
+        &.k-i-collapse::before {
+          content: "－";
+          font-weight: bold;
+          font-size: 1.5rem;
+        }
+        &.k-i-expand::before {
+          content: "＋";
+          font-weight: bold;
+          font-size: 1.5rem;
+        }
+      }
+    }
+    & th,
+    & td {
+      padding-right: 2rem;
+      color: #000000;
+      font-style: initial;
+      background: #ffffff;
+      border: none;
+      font-weight: 500;
+      //font-size: 18.4px;
+      direction: rtl;
+
+      & .markRed {
+        background-color: rgba(243, 86, 108, 0.1);
+        padding: 0.3rem 1rem;
+        border-radius: 5rem;
+        color: #f3566c;
+        display: flex;
+        justify-content: space-around;
+        width: fit-content;
+        margin-left: auto;
+      }
+    }
+
+    & .k-reset {
+      direction: rtl;
+      position: relative;
+      color: #979797;
+
+      & span {
+        width: 15rem;
+        border-left: 1px #d8d8d8 solid;
+        margin-left: 4rem;
+        color: #3f4140;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

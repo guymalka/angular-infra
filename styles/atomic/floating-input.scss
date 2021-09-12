@@ -1,0 +1,21 @@
+:host ::ng-deep {
+  // input with float label
+
+ // &.k-state-focused{
+    & label.k-label {
+      right: 9px !important;
+      top: 10px;
+      background:transparent;
+      padding: 0 5px;
+      color: #424242;
+      & input {
+        height: 2.2rem;
+        &:focus-within {
+          box-shadow: none;
+          color: #a5a5a5;
+        }
+      }
+    }
+ // }
+
+}

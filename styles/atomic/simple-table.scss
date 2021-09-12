@@ -1,0 +1,42 @@
+@import "./outline.scss";
+
+@mixin table($columns) {
+  display: grid;
+  grid-template-columns: repeat($columns, auto);
+  grid-auto-rows: minmax(4rem, auto);
+  align-items: center;
+
+  @include outline();
+
+  & > * {
+    border-bottom: 2px solid #e6e6e5;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+  }
+  & .headline {
+    font-weight: 100;
+    color: #737373;
+    font-size: 1.5rem;
+    &:first-child {
+      padding-right: 2rem;
+    }
+    &:last-child {
+      padding-left: 1rem;
+    }
+  }
+  & .data + .headline {
+    padding-right: 2rem;
+  }
+  & .data {
+    &:nth-child(#{$columns}n + 1) {
+      padding-right: 2rem;
+    }
+    &:nth-child(#{$columns}n) {
+      padding-left: 1rem;
+    }
+  }
+}
