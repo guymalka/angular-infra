@@ -1,0 +1,21 @@
+<kendo-dialog-titlebar>
+  <div style="font-size: 18px; line-height: 1.3em;">
+    <span class="k-icon k-i-form-element"></span> {{headText}}
+  </div>
+</kendo-dialog-titlebar>
+<div class="container">
+  <label>הערה עבור '{{textRef}}'</label>
+  <div class="form-group">
+    <textarea type="text"
+              class="form-control"
+              [(ngModel)]="comment"
+              required
+              (ngModelChange)="onChange($event)"></textarea>
+  </div>
+</div>
+<kendo-dialog-actions>
+  <button kendoButton
+          (click)="onConfirmAction()"
+          [primary]="true"
+          [disabled]="comment.length === 0">{{btnText}}</button>
+</kendo-dialog-actions>
